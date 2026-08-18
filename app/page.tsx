@@ -24,7 +24,7 @@ export default function Home() {
     <main>
       <nav className="nav" aria-label="Project page navigation">
         <a className="nav__brand" href="#top" aria-label="EditBridge home"><span className="nav__mark">E</span><span>EditBridge</span></a>
-        <div className="nav__links"><a href="#abstract">Abstract</a><a href="#method">Method</a><a href="#results">Results</a><a href="#analysis">Analysis</a><a href="#more-results">More Results</a></div>
+        <div className="nav__links"><a href="#abstract">Abstract</a><a href="#method">Method</a><a href="#results">Results</a><a href="#analysis">Analysis</a></div>
       </nav>
 
       <header className="hero" id="top">
@@ -99,16 +99,6 @@ export default function Home() {
         <div className="analysis-grid">
           <Figure src="./assets/attention-ablation.png" alt="Visual comparison between full attention and EditBridge sparse attention." caption="Attention sparsity. Full attention introduces source-induced artifacts; PG-BSA preserves alignment." />
           <Figure src="./assets/steps-ablation.png" alt="Comparison of one, five, and ten bridge inference steps." caption="Sampling steps. Single-step inference gives the best fidelity–efficiency balance." />
-        </div>
-      </section>
-
-      <section className="section section--gallery" id="more-results">
-        <div className="section__heading section__heading--split">
-          <div><p className="eyebrow">More results</p><h2>Source-faithful edits across resolutions.</h2></div><p>Additional full-image and 100% crop comparisons from the paper appendix.</p>
-        </div>
-        <div className="appendix-grid">
-          <Figure src="./assets/appendix-1k.png" alt="Additional EditBridge comparison at 1K." caption="Additional 1K comparison." />
-          <Figure src="./assets/appendix-2k.png" alt="Additional EditBridge comparison at 2K." caption="Additional 2K comparison." />
         </div>
       </section>
 

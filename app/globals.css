@@ -43,8 +43,7 @@ img { display:block; max-width:100%; }
 .section { width:min(1120px,calc(100% - 40px)); margin:0 auto; padding:112px 0; scroll-margin-top:88px; }
 .section+.section { border-top:1px solid var(--line); }
 .section--intro { padding-top:126px; }
-.section--tinted,.section--gallery { width:min(1260px,calc(100% - 28px)); padding-inline:clamp(20px,5vw,70px); border:1px solid var(--line)!important; border-radius:32px; background:#f6f1f9; }
-.section--gallery { margin-top:22px; background:#f5f2ec; }
+.section--tinted { width:min(1260px,calc(100% - 28px)); padding-inline:clamp(20px,5vw,70px); border:1px solid var(--line)!important; border-radius:32px; background:#f6f1f9; }
 .section__heading { max-width:820px; margin-bottom:46px; }
 .section--intro .section__heading { max-width:none; }
 .section--intro .section__heading h2 { font-size:clamp(36px,4.2vw,54px); white-space:nowrap; }
@@ -69,7 +68,6 @@ img { display:block; max-width:100%; }
 .analysis-grid { display:grid; grid-template-columns:1fr; gap:44px; }
 .analysis-grid .paper-figure { padding:20px; border:1px solid var(--line); border-radius:18px; background:#fff; }
 .analysis-grid .paper-figure img { border:0; border-radius:9px; box-shadow:none; }
-.appendix-grid { display:grid; grid-template-columns:1fr 1fr; gap:22px; align-items:start; }
 footer { display:flex; justify-content:space-between; gap:30px; width:min(1120px,calc(100% - 40px)); margin:0 auto; padding:70px 0 54px; color:var(--muted); font-size:13px; }
 footer p { margin:7px 0 0; }
 .footer__brand { color:var(--ink); font-family:Georgia,serif; font-size:22px; font-style:italic; }
@@ -87,9 +85,9 @@ footer p { margin:7px 0 0; }
   .hero__stats div:nth-child(n+3) { border-top:1px solid var(--line); }
   .section { width:calc(100% - 28px); padding:78px 0; }
   .section--intro .section__heading h2 { white-space:normal; }
-  .section--tinted,.section--gallery { width:calc(100% - 16px); padding-inline:14px; border-radius:24px; }
+  .section--tinted { width:calc(100% - 16px); padding-inline:14px; border-radius:24px; }
   .section__heading--split,.intro-grid { grid-template-columns:1fr; gap:26px; }
-  .method-cards,.analysis-grid,.appendix-grid { grid-template-columns:1fr; }
+  .method-cards,.analysis-grid { grid-template-columns:1fr; }
   .method-cards article { min-height:170px; } .method-cards h3 { margin-top:26px; }
   .paper-figure img { border-radius:10px; } .analysis-grid { gap:28px; }
   footer { width:calc(100% - 32px); flex-direction:column; }
