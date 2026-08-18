@@ -6,8 +6,8 @@ export const metadata: Metadata = {
 };
 
 const authors = [
-  ["Jiayi Song", "1,2"], ["Shijie Huang", "2"], ["Fangtai Wu", "2,3"], ["Yubo Huang", "2"],
-  ["Zhenxiong Tan", "4"], ["Songhua Liu", "1,*"], ["Jiaming Liu", "2,†"], ["Ruihua Huang", "2"],
+  ["Jiayi Song", "1,2"], ["Shijie Huang", "2"], ["Fangtai Wu", "2"], ["Yubo Huang", "2"],
+  ["Zhenxiong Tan", "3"], ["Songhua Liu", "1,*"], ["Jiaming Liu", "2,†"], ["Ruihua Huang", "2"],
 ];
 
 function Figure({ src, alt, caption, narrow = false }: { src: string; alt: string; caption: string; narrow?: boolean }) {
@@ -41,9 +41,11 @@ export default function Home() {
           {authors.map(([name, affiliation]) => <span key={name}>{name}<sup>{affiliation}</sup></span>)}
         </div>
         <p className="affiliations">
-          <span><sup>1</sup>Shanghai Jiao Tong University</span><span><sup>2</sup>Qwen Applications Business Group, Alibaba</span>
-          <span><sup>3</sup>Zhejiang University</span><span><sup>4</sup>National University of Singapore</span>
+          <span><sup>1</sup>School of Artificial Intelligence, Shanghai Jiao Tong University</span>
+          <span><sup>2</sup>Qwen Business Unit of Alibaba</span>
+          <span><sup>3</sup>National University of Singapore</span>
         </p>
+        <p className="affiliations affiliations--contact"><a href="mailto:liusonghua@sjtu.edu.cn">liusonghua@sjtu.edu.cn</a></p>
         <div className="hero__actions">
           <a className="button button--primary" href="./edit_bridge.pdf" target="_blank" rel="noreferrer">Read paper <span aria-hidden="true">↗</span></a>
           <span className="button button--ghost button--disabled" aria-label="Code coming soon">Code · coming soon</span>
@@ -91,7 +93,6 @@ export default function Home() {
           <Figure src="./assets/qualitative-1k.png" alt="Qualitative 1K comparison across EditBridge and baseline super-resolution methods." caption="Qualitative comparison at 1K. Ours recovers fine details while remaining faithful to the HR source." />
           <Figure src="./assets/qualitative-2k.png" alt="Qualitative 2K comparison across EditBridge and baseline super-resolution methods." caption="Qualitative comparison at 2K. EditBridge preserves text, object structure, and local texture." />
         </div>
-        <Figure src="./assets/main-results.png" alt="Quantitative results table for 1K, 2K, and 4K image editing." caption="Quantitative comparison. Bold values mark the best result within each resolution setting." narrow />
       </section>
 
       <section className="section" id="analysis">
