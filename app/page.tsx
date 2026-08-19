@@ -45,6 +45,10 @@ export default function Home() {
           <span><sup>2</sup>Qwen Business Unit of Alibaba</span>
           <span><sup>3</sup>National University of Singapore</span>
         </p>
+        <p className="affiliations affiliations--roles">
+          <span><sup>*</sup>Corresponding author</span>
+          <span><sup>†</sup>Project lead</span>
+        </p>
         <p className="affiliations affiliations--contact"><a href="mailto:liusonghua@sjtu.edu.cn">liusonghua@sjtu.edu.cn</a></p>
         <div className="hero__actions">
           <a className="button button--primary" href="https://arxiv.org/abs/2608.18063" target="_blank" rel="noreferrer">Read paper <span aria-hidden="true">↗</span></a>
