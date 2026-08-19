@@ -47,8 +47,8 @@ export default function Home() {
         </p>
         <p className="affiliations affiliations--contact"><a href="mailto:liusonghua@sjtu.edu.cn">liusonghua@sjtu.edu.cn</a></p>
         <div className="hero__actions">
-          <a className="button button--primary" href="./edit_bridge.pdf" target="_blank" rel="noreferrer">Read paper <span aria-hidden="true">↗</span></a>
-          <span className="button button--ghost button--disabled" aria-label="Code coming soon">Code · coming soon</span>
+          <a className="button button--primary" href="https://arxiv.org/abs/2608.18063" target="_blank" rel="noreferrer">Read paper <span aria-hidden="true">↗</span></a>
+          <a className="button button--ghost" href="https://github.com/songyangyifei/editbridge" target="_blank" rel="noreferrer">Code <span aria-hidden="true">↗</span></a>
         </div>
         <div className="hero__stats" aria-label="Key results">
           <div><strong>4K</strong><span>editing resolution</span></div><div><strong>61.1s</strong><span>4K inference</span></div>
